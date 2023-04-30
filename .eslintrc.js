@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'next/core-web-vitals',
+    'plugin:tailwindcss/recommended',
     'prettier',
   ],
   ignorePatterns: ['*.config.js'],
@@ -16,7 +17,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react'],
+  plugins: ['react', 'tailwindcss'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
@@ -42,6 +43,10 @@ module.exports = {
   settings: {
     react: {
       version: '18.2.0',
+    },
+    tailwindcss: {
+      groupByResponsive: true,
+      whitelist: [],
     },
   },
 };
