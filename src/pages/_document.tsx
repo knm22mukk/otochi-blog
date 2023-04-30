@@ -1,13 +1,13 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
+export default function Document(): JSX.Element {
   return (
-    <Html lang="ja">
+    <Html lang='ja'>
       <Head />
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

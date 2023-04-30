@@ -1,11 +1,11 @@
-import { Inter } from 'next/font/google'
+import { type NextPage } from 'next';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <main>
-      <h1>おとちブログの立ち上げ</h1>
+      <h1 className='text-red-500 text-3xl p-5'>おとちブログの立ち上げ</h1>
     </main>
-  )
-}
+  );
+};
+
+export default Home;
